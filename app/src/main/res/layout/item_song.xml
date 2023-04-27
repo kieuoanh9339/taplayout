@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/txtSongName"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       android:text="Name Song: Hoa hoa"
+       android:textSize="20sp"
+       android:textColor="@color/black"
+       />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/txtSingerName"
+       app:layout_constraintTop_toBottomOf="@id/txtSongName"
+       app:layout_constraintStart_toStartOf="parent"
+       android:text="Singer: abc"
+       android:textColor="@color/black"
+       android:textSize="20sp"
+
+       />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/txtAlbum"
+       app:layout_constraintTop_toBottomOf="@id/txtSingerName"
+       app:layout_constraintStart_toStartOf="parent"
+       android:text="Album: noi yeu be dai"
+       android:textColor="@color/black"
+       android:textSize="20sp"
+       />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/txtType"
+       app:layout_constraintTop_toBottomOf="@id/txtAlbum"
+       app:layout_constraintStart_toStartOf="parent"
+       android:text="Type: abc"
+       android:textColor="@color/black"
+       android:textSize="20sp"
+
+       />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/txtIsLike"
+       app:layout_constraintTop_toBottomOf="@id/txtType"
+       app:layout_constraintStart_toStartOf="parent"
+       android:text="Like: yes"
+       android:textColor="@color/black"
+       android:textSize="20sp"
+
+       />
+   <View android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginTop="10dp"
+       android:background="@color/black"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/txtIsLike"
+       android:layout_marginHorizontal="10dp"
+       />
+</androidx.constraintlayout.widget.ConstraintLayout>
